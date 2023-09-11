@@ -11,9 +11,13 @@ function makeBubbles() {
 
 var timer = "60";
 function runTimer() {
-  setInterval(function () {
-    timer--;
-    document.getElementById("timerval").innerHTML = timer;
+  var timerint = setInterval(function () {
+    if (timer > 0) {
+      timer--;
+      document.getElementById("timerval").innerHTML = timer;
+    } else {
+      clearInterval(timerint);
+    }
   }, 1000);
 }
 
