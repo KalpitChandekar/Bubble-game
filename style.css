@@ -55,6 +55,9 @@ body {
 }
 
 #pbtm {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
   width: 100%;
   height: calc(100%-100px);
   padding: 10px;
@@ -69,4 +72,8 @@ body {
   border-radius: 50%;
   background-color: rgb(70, 105, 70);
   color: white;
+}
+
+.bubble:hover{
+  background-color: rgb(32, 78, 32);
 }
