@@ -1,3 +1,7 @@
+var timer = "60";
+var score = 0;
+
+
 function makeBubbles() {
   var clutter = "";
 
@@ -8,8 +12,6 @@ function makeBubbles() {
 
   document.getElementById("pbtm").innerHTML = clutter;
 }
-
-var timer = "60";
 
 function makeNewHit() {
   var rn = Math.floor(Math.random() * 10);
@@ -27,7 +29,12 @@ function runTimer() {
   }, 1000);
 }
 
+function increaseScore() {
+  score += 10;
+  document.getElementById("scoreval").innerHTML = score;
+}
 
+makeBubbles();
 makeNewHit();
 runTimer();
-makeBubbles();
+increaseScore();
