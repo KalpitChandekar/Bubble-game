@@ -2,10 +2,54 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 html,
 body {
   height: 100%;
   width: 100%;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(191, 237, 191);
+}
+
+#panel {
+  overflow: hidden;
+  height: 80%;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+#ptop {
+  padding: 0 30%;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  background-color:rgb(70, 105, 70);
+}
+
+.elem{
+ display: flex;
+ gap: 10px;
+ align-items: center;
+}
+
+.box {
+  font-size: 25px;
+  color: black;
+  font-weight: 700;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 5px;
 }
