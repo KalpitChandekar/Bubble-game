@@ -10,6 +10,12 @@ function makeBubbles() {
 }
 
 var timer = "60";
+
+function makeNewHit() {
+  var rn = Math.floor(Math.random() * 10);
+  document.getElementById("hitval").innerHTML = rn;
+}
+
 function runTimer() {
   var timerint = setInterval(function () {
     if (timer > 0) {
@@ -21,5 +27,7 @@ function runTimer() {
   }, 1000);
 }
 
+
+makeNewHit();
 runTimer();
 makeBubbles();
