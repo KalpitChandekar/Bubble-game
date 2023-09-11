@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 html,
@@ -36,13 +36,13 @@ body {
   justify-content: space-between;
   width: 100%;
   height: 100px;
-  background-color:rgb(70, 105, 70);
+  background-color: rgb(70, 105, 70);
 }
 
-.elem{
- display: flex;
- align-items: center;
- gap: 15px;
+.elem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .box {
@@ -52,4 +52,21 @@ body {
   padding: 10px 20px;
   background-color: #fff;
   border-radius: 5px;
+}
+
+#pbtm {
+  width: 100%;
+  height: calc(100%-100px);
+  padding: 10px;
+}
+
+.bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(70, 105, 70);
+  color: white;
 }
