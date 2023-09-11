@@ -29,7 +29,7 @@ body {
 }
 
 #ptop {
-  padding: 0 30%;
+  padding: 0 25%;
   display: flex;
   color: #fff;
   align-items: center;
@@ -41,8 +41,8 @@ body {
 
 .elem{
  display: flex;
- gap: 10px;
  align-items: center;
+ gap: 15px;
 }
 
 .box {
