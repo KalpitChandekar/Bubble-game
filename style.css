@@ -79,4 +79,5 @@ body {
 
 .bubble:hover {
   background-color: rgb(15, 73, 15);
+  cursor: pointer;
 }

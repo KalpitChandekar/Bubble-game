@@ -1,6 +1,6 @@
 var timer = "60";
 var score = 0;
-
+var hitrn = 0;
 
 function makeBubbles() {
   var clutter = "";
@@ -14,8 +14,8 @@ function makeBubbles() {
 }
 
 function makeNewHit() {
-  var rn = Math.floor(Math.random() * 10);
-  document.getElementById("hitval").innerHTML = rn;
+  hitrn = Math.floor(Math.random() * 10);
+  document.getElementById("hitval").innerHTML = hitrn;
 }
 
 function runTimer() {
@@ -34,7 +34,15 @@ function increaseScore() {
   document.getElementById("scoreval").innerHTML = score;
 }
 
+document.getElementById("pbtm").addEventListener("click", function (e) {
+  var clickedNum = Number(e.target.innerHTML);
+  if (clickedNum === hitrn) {
+    increaseScore();
+    makeNewHit();
+    makeBubbles();
+  }
+});
+
 makeBubbles();
 makeNewHit();
 runTimer();
-increaseScore();
