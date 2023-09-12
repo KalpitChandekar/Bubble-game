@@ -1,4 +1,4 @@
-var timer = "60";
+var timer = "6";
 var score = 0;
 var hitrn = 0;
 
@@ -25,9 +25,17 @@ function runTimer() {
       document.getElementById("timerval").innerHTML = timer;
     } else {
       clearInterval(timerint);
+      var gameOverElement = document.createElement("h1"); 
+      gameOverElement.textContent = "Game Over"; 
+      gameOverElement.style.fontSize = "80px";
+      gameOverElement.style.color = "rgb(15, 73, 15)";
+      gameOverElement.style.paddingTop = "50px"; 
+      document.getElementById("pbtm").innerHTML = ""; 
+      document.getElementById("pbtm").appendChild(gameOverElement); 
     }
   }, 1000);
 }
+
 
 function increaseScore() {
   score += 10;
