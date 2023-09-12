@@ -81,7 +81,12 @@ body {
   cursor: pointer;
 }
 
-/* Styles for screens smaller than 768px (e.g., mobile phones) */
+  h1#gameOver {
+    font-size: 80px;
+    color: rgb(15, 73, 15);
+    padding-top: 50px;
+  }
+
 @media (max-width: 768px) {
   #ptop {
     padding: 0 10%;
@@ -103,4 +108,9 @@ body {
     font-weight: 800;
     padding: 5px 10px;
   }
+
+    h1#gameOver {
+      font-size: 50px; 
+     
+    }
 }

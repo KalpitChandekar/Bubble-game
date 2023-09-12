@@ -34,10 +34,8 @@ function runTimer() {
     } else {
       clearInterval(timerint);
       var gameOverElement = document.createElement("h1");
-      gameOverElement.textContent = "Game Over 🚩";
-      gameOverElement.style.fontSize = "80px";
-      gameOverElement.style.color = "rgb(15, 73, 15)";
-      gameOverElement.style.paddingTop = "50px";
+      gameOverElement.textContent = "Game Over 🚩 ";
+      gameOverElement.id = "gameOver";
       document.getElementById("pbtm").innerHTML = "";
       document.getElementById("pbtm").appendChild(gameOverElement);
     }
